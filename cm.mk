@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit AOSP Shinano device parts
-$(call inherit-product, device/sony/aries/aosp_d5803.mk)
+$(call inherit-product, device/sony/z3c/aosp_d5803.mk)
 
 # Inherit CM Rhine device parts
 $(call inherit-product, device/sony/shinano/platform2.mk)
@@ -20,6 +20,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D5803 \
                                 PRIVATE_BUILD_DESC="D5803-user 5.1.1 23.4.A.0.546 864948651 release-keys"
 
 # Override Product Name for crDroid
-PRODUCT_NAME := cm_aries
+PRODUCT_NAME := cm_z3c
 PRODUCT_MODEL := Xperia Z3 Compact
 
