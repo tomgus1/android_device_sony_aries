@@ -20,9 +20,11 @@ TARGET_BOOTLOADER_BOARD_NAME := D5803
 #Reserve space for data encryption (12656259072-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=aries
+BOARD_KERNEL_CMDLINE += androidboot.hardware=z3c
 BOARD_KERNEL_CMDLINE += mem=1756M
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/z3c/kernel-headers
 
+#Assert
+TARGET_OTA_ASSERT_DEVICE := aries,D5803,D5833,z3c
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
