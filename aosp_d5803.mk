@@ -20,11 +20,11 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from z3c device
-$(call inherit-product, device/sony/z3c/z3c.mk)
+$(call inherit-product, device/sony/aries/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_z3c
-PRODUCT_DEVICE := z3c
+PRODUCT_NAME := aosp_d5803
+PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z3C
+PRODUCT_MODEL := Xperia Z3 Compact (AOSPA)

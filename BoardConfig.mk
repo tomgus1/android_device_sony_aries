@@ -23,9 +23,7 @@ TARGET_OTA_ASSERT_DEVICE := D5803,D5833,z3c,aries
 
 TARGET_BOOTLOADER_BOARD_NAME := D5803
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/z3c/include
-
-BOARD_HARDWARE_CLASS += device/sony/z3c/cmhw
+TARGET_SPECIFIC_HEADER_PATH += device/sony/aries/include
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_aries_defconfig
@@ -42,4 +40,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/sony/z3c/sepolicy
+    device/sony/aries/sepolicy
